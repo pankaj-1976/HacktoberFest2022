@@ -31,7 +31,7 @@ body{
 }
 .wrapper .content-box{
   padding: 13px 20px 0;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid #bfbfbf;
 }
 .content-box .typing-text{
