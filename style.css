@@ -195,10 +195,10 @@ li:not(:first-child) span{
 }
 @media (max-width: 518px) {
   .wrapper .content-box{
-    padding: 10px 15px 0;
+    padding: 8px 12px 0;
   }
   .typing-text p{
-    font-size: 18px;
+    font-size: 16px;
   }
   .result-details li{
     margin-bottom: 10px;
