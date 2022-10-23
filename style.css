@@ -11,8 +11,8 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #17A2B8;
-}
+  background: #128496;
+} 
 ::selection{
   color: #fff;
   background: #17A2B8;
@@ -51,10 +51,10 @@ body{
   position: relative;
 }
 .typing-text p span.correct{
-  color: #56964f;
+  color: #40bd32;
 }
 .typing-text p span.incorrect{
-  color: #cb3439;
+  color: #b9292e;
   outline: 1px solid #fff;
   background: #ffc0cb;
   border-radius: 4px;
@@ -71,7 +71,7 @@ body{
   left: 0;
   opacity: 0;
   border-radius: 5px;
-  background: #17A2B8;
+  background: #1694a8;
   animation: blink 1s ease-in-out infinite;
 }
 @keyframes blink{
@@ -91,13 +91,13 @@ body{
 .content button{
   align-items: center;
   appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0,#17A2B8; 0, #17A2B8 100%);
-  border: 0;
+  background-image: radial-gradient(100% 100% at 100% 0,#138697, #13889a 100%);
+  
   border-radius: 6px;
   box-shadow: rgba(123, 228, 241, 0.4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
   box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
+  color: rgb(0, 0, 0);
+  cursor: pointer;  
   display: inline-flex;
   font-family: "JetBrains Mono",monospace;
   height: 48px;
@@ -108,7 +108,7 @@ body{
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
-  text-align: left;
+  text-align: left; 
   text-decoration: none;
   transition: box-shadow .15s,transform .15s;
   user-select: none;
@@ -118,14 +118,37 @@ body{
   will-change: box-shadow,transform;
   font-size: 18px;
 }
-  
-  
-  
-  
-  
-  
-  transition: transform 0.3s ease;
+.hoverbtn:hover{
+  border-color:rgb(0, 0, 0);
+  background-color: #000607;
 }
+.hoverbtn{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hoverbtn:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hoverbtn:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.hoverbtn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+  
+
 .content button:active{
   transform: scale(0.97);
 }
@@ -181,6 +204,7 @@ li:not(:first-child) span{
     padding: 10px 0;
     margin-top: 20px;
   }
+
   .content .result-details{
     width: 100%;
   }
